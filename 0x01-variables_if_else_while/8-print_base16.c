@@ -3,19 +3,23 @@
 /**
  * main - Entry point
  *
- * Description: print a-z in reverse
+ * Description: print numbers of base16 in lowercase
  *
  * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	char ch = 'z';
+	int ch = 48;/*48; decimal rep of 0*/
 
-	while (ch >= 'a')
+	while (digit <= 102)/* decimal of f*/
 	{
-		putchar(ch);
-		ch--;
+		putchar(digit);
+
+		/*after 9 we jump till 96: `*/
+		if (digit == 57)
+			digit += 39;
+		digit++;
 	}
 	putchar('\n');
 
