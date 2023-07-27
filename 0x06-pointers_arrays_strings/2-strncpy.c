@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncpy - A function that copies a strings.
+ * _strncpy - A function that copies a string.
  *
  * @dest: pointer to destination input buffer
  * @src: pointer to source input buffer
@@ -28,6 +28,7 @@ char *_strncpy(char *dest, char *src, int n)
 	 * write additional nullbytes to dest to
 	 * ensure that a total of n bytes in written
 	*/
+
 	while (i < n)
 	{
 		dest[i] = '\0';
