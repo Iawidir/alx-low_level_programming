@@ -15,6 +15,7 @@ char *_strncat(char *dest, char *src, int n)
 	int c, i;
 
 	c = 0;
+
 	/*find the size of dest array*/
 	while (dest[c])
 		c++;
@@ -23,7 +24,6 @@ char *_strncat(char *dest, char *src, int n)
 	 * src does not need to null terminated
 	 * if it contains n or more bytes
 	*/
-
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[c + i] = src[i];
 	/*null terminate dest*/
